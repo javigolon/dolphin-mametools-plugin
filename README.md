@@ -17,18 +17,18 @@ A plugin for the Dolphin File Manager to easily access and use MAME Tools.
 ## Usage:
 1. Right-click on your file.
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshots/screenshot.png)
 
 * The `Convert` option converts your ROM file(s) into the `.chd` format.
 * The `Convert and delete the original file` option converts your ROM file(s) and then deletes the original `.iso` or `.cue` file.
 
 2. A pop-up notification will appear indicating that the conversion process has started.
 
-![sss](screenshot2.png)
+![sss](screenshots/screenshot2.png)
 
 3. A second pop-up notification will confirm that the conversion process is finished.
 
-![sss](screenshot3.png)
+![sss](screenshots/screenshot3.png)
 
 ## Features:
 * Supports both `.iso` and `.cue` files.
