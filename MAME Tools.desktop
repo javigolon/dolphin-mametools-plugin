@@ -10,7 +10,7 @@ Icon=mame
 [Desktop Action mame]
 Name=Info
 Icon=mame
-Exec= sh -c 'info=""; kdialog --title "Mame Tools - Info" --passivepopup "$info" 5'
+Exec= sh -c 'info="MAME Tools Plugin for Dolphin File Manager "; kdialog --title "Mame Tools - Info" --passivepopup "$info" 10'
 
 [Desktop Action convert]
 Name=Convert
