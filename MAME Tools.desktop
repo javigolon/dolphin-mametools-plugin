@@ -1,0 +1,23 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+X-KDE-Submenu=MAME Tools
+X-KDE-Priority=TopLevel
+MimeType=application/x-iso9660-image;application/x-cue;
+Actions=mame;convert;convert_and_delete;
+Icon=mame
+
+[Desktop Action mame]
+Name=Info
+Icon=mame
+Exec= sh -c 'info=""; kdialog --title "Mame Tools - Info" --passivepopup "$info" 5'
+
+[Desktop Action convert]
+Name=Convert
+Icon=tools-media-optical-format
+Exec= sh -c 'input="%u"; output="${input%.*}.chd"; kdialog --title "MAME Tools Convert - Started" --passivepopup "$input" 10; chdman createcd -i "$input" -o "$output"; kdialog --title "MAME Tools Convert - Finished" --passivepopup "$output" 10'
+
+[Desktop Action convert_and_delete]
+Name=Convert and delete the original file
+Icon=tools-media-optical-erase
+Exec= sh -c 'input="%u"; output="${input%.*}.chd"; kdialog --title "MAME Tools Convert - Started" --passivepopup "$input" 10; chdman createcd -i "$input" -o "$output"; kdialog --title "MAME Tools Convert - Finished" --passivepopup "$output" 10; rm "$input"'
